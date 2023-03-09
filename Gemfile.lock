@@ -84,6 +84,7 @@ GEM
     childprocess (4.1.0)
     concurrent-ruby (1.1.10)
     crass (1.0.6)
+    date (3.3.3)
     debug (1.6.2)
       irb (>= 1.3.6)
       reline (>= 0.3.1)
@@ -105,14 +106,24 @@ GEM
     loofah (2.18.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
+    m9t (0.3.6)
+      i18n (>= 0.3.5)
+      rake
     mail (2.7.1)
       mini_mime (>= 0.1.1)
     marcel (1.0.2)
     matrix (0.4.2)
+    metar-parser (1.6.0)
+      i18n (>= 0.8.0)
+      m9t (~> 0.3.5)
+      net-ftp
     method_source (1.0.0)
     mini_mime (1.1.2)
     minitest (5.16.2)
     msgpack (1.5.4)
+    net-ftp (0.2.0)
+      net-protocol
+      time
     net-imap (0.2.3)
       digest
       net-protocol
@@ -189,6 +200,8 @@ GEM
       railties (>= 6.0.0)
     strscan (3.0.4)
     thor (1.2.1)
+    time (0.2.1)
+      date
     timeout (0.3.0)
     turbo-rails (1.1.1)
       actionpack (>= 6.0.0)
@@ -223,6 +236,7 @@ DEPENDENCIES
   debug
   importmap-rails
   jbuilder
+  metar-parser (~> 1.6)
   pg (~> 1.1)
   puma (~> 5.0)
   rails (~> 7.0.3, >= 7.0.3.1)
